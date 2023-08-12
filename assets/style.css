@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/* Animations on the page */
+
+@keyframes transitionLeft {
+    from {
+        margin-left: -200%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+
+}
+
+
+@keyframes transitionTop {
+    from {
+
+
+        top: 100%;
+    }
+
+    to {
+        margin-right: 0%;
+    }
+
+}
+
+
+.bannerImagegirl {
+    animation: transitionLeft 1.4s;
+}
+
+
+.right {
+    animation: transitionTop 1.4s;
+}
+
+.home-line {
+    animation: transitionTop 1.4s;
+
+}
+
+strong {
+    animation: transitionTop 1.4s;
+}
+
+
+
+/* Animation CSS ends here */
+
+html {
+    overflow-x: hidden;
+}
+
+.header {
+    /* background-color: #9DB2BF; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 18px 129px 19px 109px;
+}
+
+.header img {
+    height: 56px;
+    transition: 0.5s ease-in;
+
+}
+
+.navbar a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-left: 46px;
+    letter-spacing: 0.5px;
+}
+
+.heads {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgb(0, 0, 0, 0.4)),
+        url(/assets/photos/business-women-signature-document.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+}
+
+
+
+/* 
+.main {
+    background-color: #9DB2BF;
+    height: 100vh;
+    background-image: url(/assets/photos/1471066_11526-removebg-preview\ \(1\).png);
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    background-image: url(/assets/photos/business-women-signature-document.jpg);
+    background-repeat: no-repeat;
+        background-size: cover;
+
+} */
+
+.login {
+    border-radius: 5px;
+    background-color: #27374D;
+    border: #27374D;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.home-line {
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #1d2b3e;
+    width: 50%;
+}
+
+strong {
+    color: #1d2b3e;
+}
+
+/* .main img {
+    height: 500px;
+    position: relative;
+    bottom: 50px;
+    left: 73px;
+} */
+
+::placeholder {
+    color: #ffffff;
+}
+
+input {
+    padding: 14px;
+    width: 25vw;
+    border: white;
+    position: relative;
+    top: 57vh;
+    left: 8.1%;
+    border-radius: 12px;
+    color: white;
+    background-color: #1d2b3e;
+}
+
+
+
+footer {
+    height: 50vh;
+    background-color: #1d2b3e;
+    color: rgb(205, 203, 203);
+}
+
+.footerLogo {
+    height: 50px;
+    position: relative;
+    left: 50%;
+
+}
+
+footer p {
+    position: relative;
+    top: 85%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    color: #c6c3c3;
+}
+
+.container {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.link {
+    list-style: none;
+    margin: 40px 13px 60px 80px;
+    margin-bottom: 20px;
+}
+
+.link li {
+    padding-bottom: 18px;
+    font-size: 15px;
+}
+
+.link li a:hover {
+    color: rgb(198, 198, 198);
+    text-decoration: underline;
+}
+
+.bg {
+    /* background-color: #668091; */
+    background-image: url(/assets/photos/sky.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
+    height: 103vh;
+    /* background-color: rgb(191, 207, 220); */
+}
+
+.grid-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, 300px);
+    padding: 100px;
+    column-gap: 90px;
+    row-gap: 80px;
+
+}
+
+
+h2 {
+    letter-spacing: 10px;
+    color: black;
+    text-align: center;
+    word-spacing: 3px;
+    padding: 40px 0 0 0;
+    font-size: 32px;
+}
+
+.srvc {
+    word-wrap: break-word;
+    width: 300px;
+    text-align: center;
+}
+
+.srvc img {
+    height: 62px;
+}
+
+
+
+p,
+h4 {
+    color: #1d2b3e;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+h4 {
+    color: black;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+p {
+    letter-spacing: 0.7px;
+    line-height: 1.5;
+    /* font-family: 'Finlandica', sans-serif;
+            font-family: 'Montserrat', sans-serif; */
+    font-family: 'Noto Sans Vithkuqi', sans-serif;
+    /* font-family: 'Noto Serif', serif; */
+    color: black;
+    font-size: 12px;
+}
+
+.srvc:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transition: 0.6s;
+    transform: scale(1.1);
+}
+
+
+.nws-lttr {
+    background-color: #3f5a6c;
+    color: black;
+}
+
+i {
+    display: none;
+}
+
+
+.nav_link:hover {
+    color: #000000;
+
+}
+
+/* Tutorial */
+.courses {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0, 0.75)),
+        url(/assets/photos/online-web-design.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hdng {
+    width: 37%;
+    margin-left: 3rem;
+    padding-top: 7rem;
+}
+
+.hdng p {
+    color: #83a0c9;
+    line-height: 4;
+}
+
+.hdng h2 {
+    text-align: justify;
+    /* color: #9DB2BF; */
+    color: #fff;
+    font-size: 3rem;
+}
+
+.hdng button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    background-color: #9b3939;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/*   Newsletter    */
+
+.nws-ltr {
+    height: 50vh;
+    background-color: #e8e8e8;
+}
+
+.nws-ltr p {
+    /* font-size: 2rem; */
+    color: black;
+    text-align: center;
+    line-height: 5;
+}
+
+.nws-ltr>.right-div input {
+    background-color: #fff;
+    border: 1px solid #1d2b3e;
+}
+
+/* .nws-ltr::placeholder{
+    color: grey;
+}
+
+.input {
+    position: relative;
+    top: 1vh;
+    left: 37.5vw;
+}
+
+.input::placeholder{
+    color: #000000;
+} */
+
+input:focus {
+    outline: 1px solid #a1b5c4;
+}
+
+.Subscribe {
+    position: relative;
+    top: 5vh;
+    left: 39.1vw;
+    width: 13rem;
+    padding: 11px 0;
+    border: none;
+    background-color: #53689b;
+    border-radius: 5px;
+}
+
+/* label[type="checkbox"]{
+    color: black;
+}
+
+*/
+.subs {
+    height: 48px;
+    transform: rotate(-526deg);
+    position: relative;
+    left: 48vw;
+    top: -3vh;
+}

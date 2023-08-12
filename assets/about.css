@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #9DB2BF;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 18px 129px 19px 109px;
+}
+
+.header img {
+    height: 56px;
+    transition: 0.5s ease-in;
+
+}
+
+.navbar a {
+    font-size: 16px;
+    color: #004251;
+    font-weight: 600;
+    margin-left: 46px;
+    letter-spacing: 0.5px;
+}
+
+.login {
+    border-radius: 5px;
+    background-color: #27374D;
+    border: #27374D;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    padding: 0 0 0 12px;
+    height: 85vh;
+}
+
+/* main::after{
+        right: 3vw;
+            bottom: 0;
+            height: 1px;
+            content: "";
+            position: absolute;
+            background-color: #e6e6e6;
+            width: 95%;
+} */
+
+.right {
+    position: relative;
+    top: 6rem;
+    right: 0rem;
+}
+
+.right img {
+    height: 380px;
+}
+
+.left h1,
+p {
+    color: black;
+
+}
+
+.left {
+
+    margin: 180px 0 0 44px;
+
+
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+.sl {
+    width: 100%;
+    max-width: 194px;
+    margin-top: 81px;
+    padding: 8px 23px 9px 23px;
+    border: navajowhite;
+    /* background-color: #539cdc; */
+    background-color: #ab6969;
+    border-radius: 4px;
+}
+
+
+.faq {
+    height: 130vh;
+}
+
+
+.faq h2 {
+    color: black;
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 66px;
+    margin-top: 61px;
+}
+
+.div {
+    width: 45%;
+    display: block;
+    margin: auto;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 3px;
+    padding: 40px;
+    height: 97vh;
+
+}
+
+.div p {
+    margin: 20px 0 45px 0;
+}
+
+h4 {
+    color: rgb(75, 75, 75);
+}
+
+.div1::after {
+    right: 0;
+    bottom: -356px;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background-color: #e6e6e6;
+    width: 40%;
+    left: 24rem;
+}
+
+.div2::after {
+    bottom: -504px;
+}
+
+.div3::after {
+    bottom: -634px;
+}
+
+
+/* footer section */
+
+
+footer {
+    height: 50vh;
+    background-color: #1d2b3e;
+    color: rgb(205, 203, 203);
+}
+
+.footerLogo {
+    height: 50px;
+    position: relative;
+    left: 50%;
+
+}
+
+footer p {
+    position: relative;
+    top: 85%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    color: #c6c3c3;
+}
+
+.container {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+.link {
+    list-style: none;
+    margin: 40px 13px 60px 80px;
+    margin-bottom: 20px;
+}
+
+.link li {
+    padding-bottom: 18px;
+    font-size: 15px;
+}
+
+.link li a:hover {
+    color: rgb(198, 198, 198);
+    text-decoration: underline;
+}
+
+i {
+    display: none;
+}
+
+.div1::before {
+    top: 26px;
+    right: 39px;
+    width: calc(100% - 32px);
+    bottom: 0;
+    height: 1px;
+    content: "";
+    display: none;
+    position: absolute;
+    background-color: #e6e6e6;
+}
+
+/* Mobile CSS */
+
+@media only screen and (max-width:768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .left {
+        margin: 52px 0 0 44px;
+    }
+
+    .sl {
+        width: 87%;
+        position: relative;
+        left: 131%;
+        bottom: 44%;
+    }
+
+    .faq h2 {
+
+        font-size: 2.4rem;
+
+    }
+
+    .div{
+        width: 92%;
+        height: 88vh;
+    }
+
+        .div1::after {
+            bottom: -354px;
+            width: 84%;
+            left: 2rem;
+        }
+
+                .div2::after {
+                    bottom: -530px;
+                }
+
+                                .div3::after {
+                                bottom: -702px;
+                                }
+
+
+}
+
+
+/*saumya mobile*/
+
+@media only screen and (max-width:468px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .header {
+        padding-left: 42px;
+    }
+
+
+
+    footer p {
+        display: none;
+    }
+
+    i {
+        display: block;
+        text-align: center;
+        color: rgb(150, 150, 150);
+        font-size: 12px;
+    }
+
+    .footerLogo {
+        position: relative;
+        left: 10%;
+        top: -145px;
+    }
+
+    .link li {
+        font-size: 10px;
+    }
+}
+
+
+
+
+/*sunny mobile*/
+@media only screen and(max-width:300px) {
+    .bg {
+        height: 178vh;
+    }
+}
